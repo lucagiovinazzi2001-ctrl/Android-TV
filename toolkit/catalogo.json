@@ -1,0 +1,83 @@
+{
+  "_info": "Catalogo dei pacchetti da DISABILITARE (mai disinstallare). livello: sicuro = pubblicità/telemetria senza utilità per l'utente (confermati in blocco); consigliato = contenuti promossi/servizi di solito inutili (chiesti uno per uno, default Sì); facoltativo = app o funzioni che potresti usare (chiesti uno per uno, default No). Vengono considerati solo i pacchetti effettivamente presenti sulla TV.",
+  "mai_toccare": [
+    "android", "com.android.systemui", "com.android.settings", "com.android.tv.settings", "com.android.vending",
+    "com.google.android.gms", "com.google.android.gsf", "com.android.shell", "com.android.packageinstaller",
+    "com.google.android.packageinstaller", "com.android.permissioncontroller", "com.google.android.permissioncontroller",
+    "com.android.providers.settings", "com.android.providers.tv", "com.android.providers.media", "com.android.providers.downloads",
+    "com.google.android.tv.remote.service", "com.google.android.tvsetup", "com.google.android.tungsten.setupwraith",
+    "com.android.bluetooth", "com.android.inputmethod.latin", "com.google.android.inputmethod.latin",
+    "com.google.android.leanback.ime", "com.android.webview", "com.google.android.webview", "com.android.keychain",
+    "com.essenziale.tvlauncher"
+  ],
+  "parole_vietate": ["provider", "systemui", "settings", "inputmethod", "ime", "bluetooth", "wifi", "ota", "update", "upgrade", "remote", "setup", "keychain", "webview", "permission", "installer", "framework", "hdmi", "audio", "display", "input", "sound", "power", "network", "cec", "tuner", "drm", "widevine", "gms", "gsf"],
+  "parole_sospette": ["advert", ".ads", "adservice", "promo", "recommend", "analytics", "statistic", "telemetry", "feedback", "crashreport", "bugreport", "tracking", "marketing", "sponsor", "sonyselect", "waterfall", "patchwall"],
+  "launcher_di_sistema": [
+    {"pkg": "com.google.android.apps.tv.launcherx", "nome": "Home di Google TV (con pubblicità e suggerimenti)"},
+    {"pkg": "com.google.android.tvlauncher", "nome": "Home di Android TV"},
+    {"pkg": "com.google.android.leanbacklauncher", "nome": "Home Android TV (vecchia)"},
+    {"pkg": "com.mitv.tvhome", "nome": "PatchWall (Xiaomi)"},
+    {"pkg": "com.tcl.cyberui", "nome": "Home TCL"},
+    {"pkg": "com.sony.dtv.tvx", "nome": "Home Sony (TVX)"},
+    {"pkg": "org.droidtv.home", "nome": "Home Philips"}
+  ],
+  "pacchetti": [
+    {"pkg": "com.google.android.feedback", "nome": "Invio feedback/diagnostica Google", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.google.android.tv.bugreportsender", "nome": "Invio segnalazioni di bug", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.google.android.apps.tv.launcherx.coreservices", "nome": "Servizi suggerimenti Home Google TV", "cat": "pubblicità", "livello": "consigliato", "note": "Solo se usi Essenziale come home"},
+    {"pkg": "com.google.android.tvrecommendations", "nome": "Motore raccomandazioni Android TV", "cat": "contenuti", "livello": "consigliato", "note": "Alimenta le file di contenuti consigliati nella home di sistema"},
+    {"pkg": "com.google.android.leanbacklauncher.recommendations", "nome": "Raccomandazioni home (vecchia)", "cat": "contenuti", "livello": "consigliato"},
+    {"pkg": "com.google.android.apps.tv.dreamx", "nome": "Modalità Ambient Google TV (salvaschermo con promo)", "cat": "contenuti", "livello": "consigliato", "note": "Rimarrà il salvaschermo di base"},
+    {"pkg": "com.google.android.backdrop", "nome": "Modalità Ambient/Backdrop", "cat": "contenuti", "livello": "consigliato"},
+    {"pkg": "com.android.printspooler", "nome": "Servizio di stampa", "cat": "inutile", "livello": "consigliato"},
+    {"pkg": "com.google.android.katniss", "nome": "Ricerca vocale / Google Assistant", "cat": "app", "livello": "facoltativo", "note": "Disabilitandolo il tasto microfono del telecomando non funzionerà più"},
+    {"pkg": "com.google.android.speech.pumpkin", "nome": "Riconoscimento vocale offline", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.apps.mediashell", "nome": "Chromecast integrato", "cat": "app", "livello": "facoltativo", "note": "Serve per trasmettere dal telefono"},
+    {"pkg": "com.google.android.videos", "nome": "Google TV / Play Film", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.youtube.tv", "nome": "YouTube", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.youtube.tvmusic", "nome": "YouTube Music", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.youtube.tvkids", "nome": "YouTube Kids", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.play.games", "nome": "Google Play Giochi", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.google.android.tv", "nome": "Live Channels (canali TV)", "cat": "app", "livello": "facoltativo", "note": "Se guardi il digitale terrestre da questa app NON disabilitarla"},
+    {"pkg": "com.google.android.marvin.talkback", "nome": "TalkBack (accessibilità)", "cat": "app", "livello": "facoltativo"},
+
+    {"pkg": "com.sony.dtv.promos", "nome": "Sony: promozioni", "cat": "pubblicità", "livello": "sicuro"},
+    {"pkg": "com.sony.dtv.sonyselect", "nome": "Sony Select (app sponsorizzate)", "cat": "pubblicità", "livello": "consigliato"},
+    {"pkg": "com.sony.dtv.discovery", "nome": "Sony: Discover (contenuti consigliati)", "cat": "contenuti", "livello": "consigliato"},
+    {"pkg": "com.sony.dtv.smarthelp", "nome": "Sony: Guida", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.sony.dtv.osat.album", "nome": "Sony: Album foto", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.sony.dtv.osat.music", "nome": "Sony: Musica", "cat": "app", "livello": "facoltativo"},
+    {"pkg": "com.sony.dtv.osat.video", "nome": "Sony: Video", "cat": "app", "livello": "facoltativo"},
+
+    {"pkg": "com.miui.analytics", "nome": "Xiaomi: analytics", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.xiaomi.statistic", "nome": "Xiaomi: statistiche", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.xiaomi.mitv.advertise", "nome": "Xiaomi: pubblicità", "cat": "pubblicità", "livello": "sicuro"},
+    {"pkg": "com.mitv.adservice", "nome": "Xiaomi: servizio pubblicità", "cat": "pubblicità", "livello": "sicuro"},
+
+    {"pkg": "com.tcl.waterfall.overseas", "nome": "TCL: Home contenuti (Waterfall)", "cat": "contenuti", "livello": "consigliato"},
+    {"pkg": "com.tcl.messagebox", "nome": "TCL: messaggi promozionali", "cat": "pubblicità", "livello": "consigliato"},
+    {"pkg": "com.tcl.esticker", "nome": "TCL: E-Sticker demo negozio", "cat": "pubblicità", "livello": "sicuro"},
+
+    {"pkg": "com.nvidia.feedback", "nome": "NVIDIA: feedback", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.nvidia.stats", "nome": "NVIDIA: statistiche", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.nvidia.tegrazone3", "nome": "NVIDIA Games", "cat": "app", "livello": "facoltativo"},
+
+    {"pkg": "com.amazon.device.crashmanager", "nome": "Fire TV: invio crash", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.amazon.client.metrics", "nome": "Fire TV: metriche", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.amazon.client.metrics.api", "nome": "Fire TV: API metriche", "cat": "telemetria", "livello": "sicuro"},
+    {"pkg": "com.amazon.precog", "nome": "Fire TV: motore raccomandazioni", "cat": "contenuti", "livello": "consigliato"}
+  ],
+  "impostazioni": [
+    {"id": "animazioni", "nome": "Animazioni di sistema più rapide (0.5x)", "livello": "consigliato",
+     "valori": [["global", "window_animation_scale", "0.5"], ["global", "transition_animation_scale", "0.5"], ["global", "animator_duration_scale", "0.5"]]}
+  ],
+  "app_note": {
+    "com.netflix.ninja": "Netflix", "com.google.android.youtube.tv": "YouTube", "com.amazon.amazonvideo.livingroom": "Prime Video",
+    "com.disney.disneyplus": "Disney+", "it.rainet.androidtv": "RaiPlay", "it.mediaset.infinitytv": "Infinity", "it.mediaset.mediasetplay": "Mediaset Infinity",
+    "com.dazn": "DAZN", "com.spotify.tv.android": "Spotify", "com.plexapp.android": "Plex", "org.xbmc.kodi": "Kodi",
+    "com.apple.atve.androidtv.appletv": "Apple TV+", "com.nowtv.nowtv_android_tv": "NOW", "com.sky.skygo.androidtv": "Sky Go",
+    "tv.pluto.android": "Pluto TV", "com.google.android.youtube.tvmusic": "YouTube Music", "com.google.android.videos": "Google TV",
+    "com.android.vending": "Play Store", "com.google.android.tv": "Live Channels", "com.twitch.android.app": "Twitch",
+    "com.paramount.android.pplus": "Paramount+", "com.hbo.hbonow": "HBO Max", "com.wbd.stream": "Max", "com.android.chrome": "Chrome"
+  }
+}
